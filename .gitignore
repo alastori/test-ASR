@@ -1,0 +1,23 @@
+# Virtual environment
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+bin/
+lib/
+include/
+pyvenv.cfg
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+etc/
+share/
+
+# Data and temp directories
+data/
+temp/
+
+# System files
+.DS_Store
+Thumbs.db
