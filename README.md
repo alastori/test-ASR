@@ -9,7 +9,7 @@ Follow these steps to set up your environment locally on macOS:
 1. **Define and create a directory for the project:**
     ```sh
     export VENVDIR=~/Code/test-ASR
-    mkdir -p test-ASR
+    mkdir -p $VENVDIR
     ```
 
 2. **Set up a virtual environment:**
