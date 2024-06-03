@@ -6,14 +6,14 @@ This repository contains Jupyter notebooks for processing and transcribing audio
 
 Follow these steps to set up your environment locally on macOS:
 
-1. **Create a directory for the project:**
+1. **Define and create a directory for the project:**
     ```sh
-    mkdir test-ASR
+    export VENVDIR=~/Code/test-ASR
+    mkdir -p test-ASR
     ```
 
 2. **Set up a virtual environment:**
     ```sh
-    export VENVDIR=~/test-ASR
     python3 -m venv $VENVDIR
     ```
 
@@ -43,31 +43,33 @@ Follow these steps to set up your environment locally on macOS:
     jupyter lab
     ```
 
-8. **Install required Python packages:**
+
+## Cloning the repository
     ```sh
-    pip install pydub torch transformers soundfile
+    git clone https://github.com/your-username/test-ASR.git
     ```
+
 
 ## Running the Notebook
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/test-ASR.git
-    cd test-ASR
-    ```
-
-2. Activate the virtual environment (if not already activated):
+1. Activate the virtual environment (if not already activated):
     ```sh
     source bin/activate
     ```
 
 
-3. Start JupyterLab (if not already running):
+2. Start JupyterLab (if not already running):
     ```sh
     jupyter lab
     ```
 
-4. Open and run the notebook `test-ASR.ipynb` in JupyterLab.
+3. Open and run the notebook `test-ASR.ipynb` in JupyterLab.
+
+### Notes
+
+- Ensure your audio files are placed in the `data/` directory.
+- The transcriptions will be saved in the `data/` directory.
+
 
 ## Project Structure
 
@@ -81,10 +83,6 @@ test-ASR/
 └── temp/ # Directory to store temporary files
 ```
 
-## Notes
-
-- Ensure your audio files are placed in the `data/` directory.
-- The transcriptions will be saved in the `data/` directory.
 
 ## License
 
