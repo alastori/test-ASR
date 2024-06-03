@@ -6,47 +6,40 @@ This repository contains Jupyter notebooks for processing and transcribing audio
 
 Follow these steps to set up your environment locally on macOS:
 
-1. **Define and create a directory for the project:**
+1. **Clone the repository:**
     ```sh
-    export VENVDIR=~/Code/test-ASR
-    mkdir -p $VENVDIR
+    git clone https://github.com/alastori/test-ASR.git
+    cd test-ASR
+    ```
+    
+2. **Define the virtual environment directory:**
+    ```sh
+    export VENVDIR=$(pwd)
     ```
 
-2. **Set up a virtual environment:**
+3. **Set up a virtual environment:**
     ```sh
     python3 -m venv $VENVDIR
     ```
 
-3. **Activate the virtual environment:**
+4. **Activate the virtual environment:**
     ```sh
-    cd $VENVDIR
-    source $VENVDIR/bin/activate
+    source bin/activate
     ```
 
-4. **Upgrade `pip`:**
+5. **Upgrade `pip`:**
     ```sh
     python -m pip install --upgrade pip
     ```
 
-5. **Install JupyterLab:**
+6. **Install JupyterLab:**
     ```sh
     pip install jupyterlab
     ```
 
-6. **Install additional Jupyter dependencies:**
+7. **Install additional Jupyter dependencies:**
     ```sh
-    pip install --upgrade jupyter ipywidgets
-    ```
-
-7. **Launch JupyterLab:**
-    ```sh
-    jupyter lab
-    ```
-
-
-## Cloning the repository
-    ```sh
-    git clone https://github.com/your-username/test-ASR.git
+    pip install ipywidgets
     ```
 
 
@@ -56,7 +49,6 @@ Follow these steps to set up your environment locally on macOS:
     ```sh
     source bin/activate
     ```
-
 
 2. Start JupyterLab (if not already running):
     ```sh
